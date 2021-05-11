@@ -18,6 +18,7 @@
 
     <modules>
         <module>uranus-common</module>
+        <module>uranus-server</module>
     </modules>
 
     <properties>
