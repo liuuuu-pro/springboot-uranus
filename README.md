@@ -17,3 +17,6 @@
 --- | --- | ---
 | SpringBoot | 2.4.5 | 快速开发框架
 | hutool | 5.6.5 | 小而全的Java工具类库
+
+#### 指令
+* 构建docker镜像: mvn compile jib:build
