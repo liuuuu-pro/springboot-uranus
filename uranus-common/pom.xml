@@ -16,6 +16,7 @@
 
     <modules>
         <module>common-web</module>
+        <module>common-redis</module>
     </modules>
 
 </project>

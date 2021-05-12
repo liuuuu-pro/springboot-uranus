@@ -15,6 +15,7 @@
 
     <properties>
         <common.web.version>0.0.1-SNAPSHOT</common.web.version>
+        <common.redis.version>0.0.1-SNAPSHOT</common.redis.version>
     </properties>
 
     <dependencies>
@@ -22,6 +23,11 @@
             <groupId>com.liu</groupId>
             <artifactId>common-web</artifactId>
             <version>${common.web.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.liu</groupId>
+            <artifactId>common-redis</artifactId>
+            <version>${common.redis.version}</version>
         </dependency>
     </dependencies>
 
@@ -31,32 +37,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.4.5</version>
             </plugin>
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
-                <version>3.0.0</version>
-                <configuration>
-                    <from>
-                        <image>openjdk:alpine</image>
-                    </from>
-                    <to>
-                        <!--阿里云镜像仓库-->
-                        <image>registry.cn-hangzhou.aliyuncs.com/namespace/${project.artifactId}</image>
-                        <tags>
-                            <tag>${project.version}</tag>
-                        </tags>
-                        <auth>
-                            <username>user</username>
-                            <password>password</password>
-                        </auth>
-                    </to>
-                    <allowInsecureRegistries>true</allowInsecureRegistries>
-                    <container>
-                        <mainClass>com.liu.uranus.server.UranusApplication</mainClass>
-                    </container>
-                </configuration>
             </plugin>
         </plugins>
     </build>
