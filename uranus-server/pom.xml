@@ -15,6 +15,7 @@
 
     <properties>
         <common.web.version>0.0.1-SNAPSHOT</common.web.version>
+        <common.redis.version>0.0.1-SNAPSHOT</common.redis.version>
     </properties>
 
     <dependencies>
@@ -23,6 +24,25 @@
             <artifactId>common-web</artifactId>
             <version>${common.web.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.liu</groupId>
+            <artifactId>common-redis</artifactId>
+            <version>${common.redis.version}</version>
+        </dependency>
     </dependencies>
+
+    <build>
+        <finalName>uranus-server</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

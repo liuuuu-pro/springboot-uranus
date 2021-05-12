@@ -4,3 +4,16 @@ server:
 spring:
   application:
     name: uranus-server
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  database: 0
+  password:
+  maxTotal: 120
+  maxIdle: 10
+  maxWaitMillis: 500
+  socketTimeout: 5000
+  timeBetweenEvictionRunsMillis: 30000
+  minEvictableIdleTimeMillis: 30000
+  testOnBorrow: true
