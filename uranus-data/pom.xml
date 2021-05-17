@@ -10,14 +10,14 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>uranus-common</artifactId>
+    <artifactId>uranus-data</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>common-web</module>
-        <module>common-redis</module>
-        <module>common-feign</module>
+        <module>data-domain</module>
+        <module>data-feign</module>
+        <module>data-server</module>
     </modules>
 
 </project>

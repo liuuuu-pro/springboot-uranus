@@ -6,18 +6,18 @@
 
     <parent>
         <groupId>com.liu</groupId>
-        <artifactId>uranus</artifactId>
+        <artifactId>uranus-common</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>uranus-common</artifactId>
+    <artifactId>common-feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
 
-    <modules>
-        <module>common-web</module>
-        <module>common-redis</module>
-        <module>common-feign</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

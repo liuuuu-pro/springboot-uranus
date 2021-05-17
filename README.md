@@ -12,7 +12,9 @@
 | uranus-common | 公共依赖组件
 | -common-web | web支持模块
 | -common-redis | redis支持模块
+| -common-feign | feign支持模块
 | uranus-server | 服务端组件
+| uranus-data | 数据服务组件
 
 #### 技术
 | 后端 | 版本 | 描述 
@@ -24,3 +26,9 @@
 
 #### 指令
 * 构建docker镜像: mvn compile jib:build
+
+#### 端口
+| 服务 | 描述 |
+| --- | ---
+| uranus-server | 8080
+| data-server | 8081

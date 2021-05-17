@@ -1,0 +1,1 @@
+package com.liu.uranus.data.domain;
